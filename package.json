@@ -1,6 +1,6 @@
 {
   "name": "matchesparser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Parse Matches and add to meteor mongoDB",
   "main": "index.js",
   "scripts": {

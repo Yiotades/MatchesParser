@@ -4,6 +4,7 @@ function ParsedMatch(cells, leagueData, date){
 	this.betable = this.isBetable(this.status);
 	this.league = leagueData.league;
 	this.country = leagueData.country;
+	this.cup = leagueData.cup;
 	this.hometeam = cells.eq(5).text();
 	this.awayteam = cells.eq(9).text();
 	this.homescore;
