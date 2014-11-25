@@ -37,7 +37,7 @@ var updateMatches = function(matches){
 
 					}else{
 
-						_.extend(match, {bets:{hometeam:0,draw:0,awayteam:0}, evaluated:false});
+						_.extend(match, {bets:{home:0,draw:0,away:0}, evaluated:false});
 						collection.insert( match ,{} , function(err,result){
 							updatedMatches++;
 							if (updatedMatches === matcheslength){

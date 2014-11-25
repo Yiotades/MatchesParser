@@ -28,11 +28,11 @@ ParsedMatch.prototype.setScore = function(score) {
     	this.homescore = scoreArray[0];
     	this.awayscore = scoreArray[1];
     	if (this.homescore > this.awayscore){
-    		this.result = "1";
+    		this.result = "home";
     	}else if(this.homescore === this.awayscore){
-    		this.result = "X";
+    		this.result = "draw";
     	}else{
-    		this.result = "2";
+    		this.result = "away";
     	}
 
     }
