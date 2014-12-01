@@ -1,9 +1,7 @@
 
-var parse = require('./parse.js');
-var parseweek = require('./parseweek.js');
+var Parser = require('./Parser.js');
 
 
 module.exports = {
-  parse: parse,
-  parseweek: parseweek
+  Parser
 }

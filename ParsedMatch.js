@@ -2,9 +2,14 @@ function ParsedMatch(cells, leagueData, date){
 	this.time = this.getTime(cells.eq(0).text() , date);
 	this.status = cells.eq(1).text();
 	this.betable = this.isBetable(this.status);
-	this.league = leagueData.league;
+
 	this.country = leagueData.country;
-	this.cup = leagueData.cup;
+	if (leagueData.cup === leagueData.country){
+		this.league = leagueData.league;
+	}else{
+		this.league = leagueData.cup;
+	}
+	
 	this.hometeam = cells.eq(5).text();
 	this.awayteam = cells.eq(9).text();
 	this.homescore;

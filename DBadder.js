@@ -6,7 +6,7 @@ var MongoClient = require('mongodb').MongoClient
 // Connection URL
 var url = require('./parseConfig.js').DBurl ;
 
-var updateMatches = function(matches){
+var updateMatches = function(url, matches){
 
 	MongoClient.connect(url, function(err, db) {
 
